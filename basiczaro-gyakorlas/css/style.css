@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+
+body{
+  margin:0;
+  font-size: 16px;
+  font-family: 'Coda Caption', sans-serif;
+  color: #fff;
+}
+
+div{
+  position:relative;
+  box-sizing:border-box;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 5% 0 10%;
+  font-size: 3em;
+}
+
+h3 {
+  float: right;
+  margin: 0 5% 0 10%;
+  font-size: 1.5em;
+}
+
+.shipBlock {
+  display: inline-block;
+  width: 50%;
+  font-weight: bold;
+}
+
+.shipBlock:hover {
+  border: solid 3px #fff;
+  cursor: pointer;
+}
+
+.shipBlock img{
+  width: 25%;
+  height: 25%;
+  float: right;
+  border: double 5px #000;
+}
+
+
+.infoContainer img {
+  width: 70%;
+  height: 70%;
+  border: double 5px #000;
+}
+
+.container{
+  width:100%;
+  min-height: 100vh;
+  padding:0;
+}
+
+.container:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.container>div{
+  float: left;
+  height: auto;
+}
+
+.spaceship-list{
+  width: 100%;
+  background-image: url('/img/metal-panel.jpg');
+  overflow: auto
+}
+
+.one-spaceship{
+  width: 100%;
+  background-image: url('/img/texture23_rusty_metal_by_freetextures.jpg');
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.searchbar{
+  position: relative;
+}
+
+#search-text,
+#search-button {
+  line-height: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #581509;
+}
+
+#search-text {
+ width:150px;
+}
+
+#search-button{
+  background: #efc610;
+}
+
+#search-button:hover{
+  cursor: pointer;
+}
+
+@media(min-width:1200px){
+  .spaceship-list{
+    width: 75%;
+  }
+
+  .one-spaceship{
+    width: 25%;
+  }
+
+  .container>div{
+    height: 100vh;
+  }
+  
+  .searchbar{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}
